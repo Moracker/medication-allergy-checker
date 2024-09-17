@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Intolerance Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Medication Intolerance Checker</h1>
+        <p>Find out if your medications contain excipients that may cause allergies or intolerances.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#excipients">Excipients List</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About This Website</h2>
+        <p>This tool helps you check if your medications contain excipients like lactose, gluten, and others that could trigger allergies or intolerances.</p>
+    </section>
+
+    <section id="search">
+        <h2>Search for a Medication</h2>
+        <form action="/search" method="POST">
+            <label for="drug-name">Enter Drug Name:</label>
+            <input type="text" id="drug-name" name="drug-name" placeholder="e.g., Paracetamol">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="excipients">
+        <h2>Excipients to Watch Out For</h2>
+        <ul>
+            <li><strong>Lactose:</strong> Commonly found in tablets, can cause issues for lactose-intolerant individuals.</li>
+            <li><strong>Gluten:</strong> Found in some medications, can cause reactions in those with celiac disease.</li>
+            <!-- Add more excipients here -->
+        </ul>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have questions, please <a href="mailto:info@drugchecker.com">email us</a>.</p>
+        </section>
+    </footer>
+</body>
+</html>
